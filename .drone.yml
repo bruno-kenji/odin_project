@@ -10,10 +10,12 @@ steps:
   image: alpine
   commands:
   - pwd
+  - sleep 30
   - echo hellohello
   when:
   branch:
   - master
+  - auto
   event:
   - push
   - pull-request

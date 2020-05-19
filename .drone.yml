@@ -10,10 +10,21 @@ steps:
   image: alpine
   commands:
   - pwd
-  - echo hello world
+  - echo helloworld
   when:
   branch:
   - master
+  event:
+  - push
+  - pull-request
+
+- name: vamoBot
+  image: alpine
+  commands:
+  - echo ZAWARUDO
+  when:
+  branch:
+  - auto
   event:
   - push
   - pull-request
@@ -26,8 +37,6 @@ steps:
     template: >
         "#### My Msg ..."
   debug: true
-  commands:
-  - echo Hello ZAWARUDO
   branch:
   - auto
   event:

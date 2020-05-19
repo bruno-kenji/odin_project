@@ -10,7 +10,7 @@ steps:
   image: alpine
   commands:
   - pwd
-  - echo helloThear
+  - echo hellohello
   when:
   branch:
   - master

@@ -1,1 +1,1 @@
-Testing popuko!!
+Testing popuko and autosquash!!

@@ -7,7 +7,7 @@ on:
       - completed
   pull_request:
     types:
-      # A closed pull request makes the checks on the other
+      # A merged pull request makes the checks on the other
       # pull request on the same base outdated.
       - closed
       # Adding the autosquash label to a pull request can

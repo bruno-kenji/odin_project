@@ -20,7 +20,7 @@ def random_number():
 def catch_all(path):
     if app.debug:
         return get('http://localhost:5000/{}'.format(path)).text
-    return 'You want the path: %s' % path
+    return 'You want this path: %s' % path
 
 if __name__ == '__main__':
     app.run()

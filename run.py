@@ -10,7 +10,7 @@ cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 @app.route('/api/random', methods=['GET', 'POST'])
 def random_number():
     response = {
-        'myRandomNumber': randint(1, 100)
+        'randomNumber': randint(1, 100)
     }
     return jsonify(response)
 

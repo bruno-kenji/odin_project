@@ -11,7 +11,7 @@ steps:
   commands:
   - pwd
   - sleep 20
-  - echo helloworld
+  - echo hellowoorld
   when:
   branch:
   - master

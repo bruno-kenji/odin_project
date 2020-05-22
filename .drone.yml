@@ -10,7 +10,8 @@ steps:
   image: alpine
   commands:
   - pwd
-  - echo helloworld
+  - sleep 20
+  - echo hellowoorld
   when:
   branch:
   - master
